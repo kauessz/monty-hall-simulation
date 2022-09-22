@@ -21,7 +21,7 @@ export default function Home() {
       </div>
       <div>
       <Card>
-        <EntradaNumerica text='Qtde' value={comPresente} 
+        <EntradaNumerica text='Porta com Presente' value={comPresente} 
         onChange={novaPortaComPresente => setComPresente(novaPortaComPresente)} />
       </Card>
       <Card bgcolor='#28a085'>
