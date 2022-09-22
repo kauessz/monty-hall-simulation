@@ -5,7 +5,7 @@ import { atualizarPortas, criarPortas } from "../../../functions/porta"
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-export default function jogo(){
+export default function Jogo(){
   const router = useRouter()
   const [valido, setValido] = useState(false)
   const [portas, setPortas] = useState([])
@@ -29,7 +29,7 @@ export default function jogo(){
 
   function renderizarPortas(){
     return portas.map(porta => {
-      return <Porta value={porta} onChange={novaPorta => setPortas(atualizarPortas(portas, novaPorta))} />
+      return <Porta key={1} value={porta} onChange={novaPorta => setPortas(atualizarPortas(portas, novaPorta))} />
     })
   }
 
